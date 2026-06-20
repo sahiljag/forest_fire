@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Prediction App</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#1e3c72,#2a5298);
+            color:white;
+        }
+
+        .container{
+            text-align:center;
+            max-width:700px;
+            padding:40px;
+        }
+
+        h1{
+            font-size:3rem;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:1.2rem;
+            margin-bottom:30px;
+            line-height:1.6;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:15px 35px;
+            background:white;
+            color:#1e3c72;
+            text-decoration:none;
+            border-radius:50px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:translateY(-3px);
+            box-shadow:0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚀 Data Science Prediction App</h1>
+
+        <p>
+            Welcome to the Machine Learning Prediction System.
+            Explore predictive analytics powered by Python,
+            Flask, and Machine Learning models.
+        </p>
+
+        <a href="{{url_for('prediction')}}" class="btn">Get Started</a>
+    </div>
+
+</body>
+</html>
